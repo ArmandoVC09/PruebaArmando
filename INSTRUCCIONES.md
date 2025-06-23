@@ -6,16 +6,28 @@ PROGRAMAS NECESARIOS
 BASE DE DATOS
 1. Descargar el scritp contenido en el correo de la prueba
 2. Abrir SSMS 21 con permisos de administrador
-3. En la pantalla superior del lado izquierdo, seleccionar la opción "Archivo"
-4. En el menú desplegado seleccionar "Abrir"
-5. Dentro del menu desplegado seleccionar "Archivo..."
-6. Buscar y seleccionar el script
-7. Ejecutar el script
-8. Ejecutar los siguientes comandos:
+3. Iniciar con autenticación windows, poniendo como "Opcional" la opcion "Cifrado"
+4. En la pantalla superior del lado izquierdo, seleccionar la opción "Archivo"
+5. En el menú desplegado seleccionar "Abrir"
+6. Dentro del menu desplegado seleccionar "Archivo..."
+7. Buscar y seleccionar el script
+8. Ejecutar el script
+9. Ejecutar los siguientes comandos:
 
   use pruebaArmando
-INSERT USUARIOS(nombre,contraseña) VALUES ('admin', 'admin')
-INSERT TIPOS_MADERA(nombre) VALUES ('Pino')
-INSERT TIPOS_MADERA(nombre) VALUES ('Cedro')
-INSERT TIPOS_MADERA(nombre) VALUES ('Encino')
+  INSERT USUARIOS(nombre,contraseña) VALUES ('admin', 'admin')
+  INSERT TIPOS_MADERA(nombre) VALUES ('Pino')
+  INSERT TIPOS_MADERA(nombre) VALUES ('Cedro')
+  INSERT TIPOS_MADERA(nombre) VALUES ('Encino')
 
+CONEXION DE BASE DE DATOS A VISUAL STUDIO
+1. Abrir SSMS 21
+2. Iniciar con autenticación windows, poniendo como "Opcional" la opcion "Cifrado"
+3. En la ventana de explorador de objetos, dar click derecho en el servidor
+4. En el menu desplegado seleccionar la opción "Propiedades"
+5. En la información que se muestra, copiar el nombre del servidor
+6. Abrir la solución en Visual Studio
+7. Entrar a la carpeta "Clases" y abrir la clase "ConexionBD.cs"
+8. Modificar de la siguiente manera el valor de la variable "cadenaConexion":
+    La cadena tiene la siguiente estructura:
+   Data Source=DESKTOP-NFHJLJR\\SQLEXPRESS;Initial Catalog=pruebaArmando;Integrated Security=True;Trust Server Certificate = True;
