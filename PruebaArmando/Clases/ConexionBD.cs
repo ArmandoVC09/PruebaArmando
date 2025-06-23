@@ -12,7 +12,9 @@ namespace Ejercicio.Clases
         private static readonly Lazy<ConexionBD> lazyInstance = new Lazy<ConexionBD>(() => new ConexionBD());
         public static ConexionBD Instance { get { return lazyInstance.Value; } }
 
-        private string cadenaConexion = "Data Source=DESKTOP-NFHJLJR\\SQLEXPRESS;Initial Catalog=pruebaArmando;Integrated Security=True;Trust Server Certificate = True;";
+        //CADENA DE CONEXIÓN A LA BASE DE DATOS
+        //private string cadenaConexion = "Data Source=DESKTOP-NFHJLJR\\SQLEXPRESS;Initial Catalog=pruebaArmando;Integrated Security=True;Trust Server Certificate = True;";
+        private string cadenaConexion = "Data Source=[];Initial Catalog=pruebaArmando;Integrated Security=True;Trust Server Certificate = True;";
 
         public SqlConnection abrirConexion (){ 
             
