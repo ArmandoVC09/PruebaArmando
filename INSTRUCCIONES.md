@@ -32,6 +32,9 @@ CONEXION DE BASE DE DATOS A VISUAL STUDIO
   1. La cadena tiene la siguiente estructura:
    Data Source=[SERVIDOR];Initial Catalog=pruebaArmando;Integrated Security=True;Trust Server Certificate = True;
   2. Quitar los corchetes después de "Data Source=" y pegar el nombre de su servidor
+9. Ahora podrá ejecutar el programa
+
+PD. El usuario y contraseña son "admin"
 
 
    
