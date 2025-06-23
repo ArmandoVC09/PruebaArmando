@@ -29,5 +29,9 @@ CONEXION DE BASE DE DATOS A VISUAL STUDIO
 6. Abrir la solución en Visual Studio
 7. Entrar a la carpeta "Clases" y abrir la clase "ConexionBD.cs"
 8. Modificar de la siguiente manera el valor de la variable "cadenaConexion":
-    La cadena tiene la siguiente estructura:
-   Data Source=DESKTOP-NFHJLJR\\SQLEXPRESS;Initial Catalog=pruebaArmando;Integrated Security=True;Trust Server Certificate = True;
+  1. La cadena tiene la siguiente estructura:
+   Data Source=[SERVIDOR];Initial Catalog=pruebaArmando;Integrated Security=True;Trust Server Certificate = True;
+  2. Quitar los corchetes después de "Data Source=" y pegar el nombre de su servidor
+
+
+   
